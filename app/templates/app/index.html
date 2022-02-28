@@ -1,0 +1,56 @@
+{% extends 'app/base.html' %}
+
+{% block titulo %} ESTE ES EL INDEX DE NUESTRO SITIO {% endblock %}
+
+{% block contenido %}
+
+{% include 'app/menu.html' %}
+
+<div class="container">
+    <div class="row mt-5">
+
+        <div class="col-md-12">
+            <h1 class="mb-10 mt-10">Tu Lista de deseos</h1>
+
+
+
+            <hr />
+            
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h1 class="mb-10 mt-10">lista de otros usuarios</h1>
+            <hr />
+
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Agregado por</th>
+                    <th scope="col">Agregado el</th>
+                    <th scope="col">Accion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
